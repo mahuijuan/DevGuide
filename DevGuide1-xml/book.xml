@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!-- $Id: book.xml,v 1.28 2003/05/17 20:34:35 draphael Exp $ -->
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
-		"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!DOCTYPE book [
+	<!ENTITY nbsp "&#160;">
 	<!ENTITY VERSION SYSTEM "VERSION.xml">
 	<!ENTITY bookinfo SYSTEM "bookinfo.xml">
 	<!ENTITY legalnotice SYSTEM "legalnotice.xml">
