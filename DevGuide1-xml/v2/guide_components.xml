@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <!-- $Id: guide_components.xml,v 1.6 2004/12/28 18:09:47 awiesmann Exp $ -->
-<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
-		"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!DOCTYPE book [
 	<!ENTITY VERSION SYSTEM "version_info.xml">
 	<!ENTITY guide_info SYSTEM "guide_info.xml">
 	<!ENTITY legal_notice SYSTEM "legal_notice.xml">

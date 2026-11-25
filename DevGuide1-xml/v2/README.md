@@ -10,8 +10,14 @@ This is the abandoned 2.0 alpha XML branch. Do not use this version.
 
 Building a document out of this requires considerable effort. This version of the Guide is in DocBook format, so generating a copy on anything other than Linux is non-trivial.
 
-In your Linux distro, install DocBook utilities. Be careful, on my basic OpenSuse 12.3 installation, installation of DocBook related packages installed 1035 packages. Make sure you include "dap", which can help build DocBook books with a single step. 
+The root document keeps its entity declarations local to this repository. If you attempt an archival build, install local DocBook XSL and FOP packages, then keep the XML processor offline:
+
+```sh
+xsltproc --nonet --output guide.fo /absolute/path/to/local/docbook-xsl/fo/docbook.xsl guide_components.xml
+```
+
+Do not remove `--nonet` or use a stylesheet URL. Pass `guide.fo` to the locally installed FOP PDF tool.
 
 ## Contact
 
-Please contact Andrew van der Stock vanderaj@owasp.org for any queries about this edition. 
+Please contact Andrew van der Stock vanderaj@owasp.org for any queries about this edition.
